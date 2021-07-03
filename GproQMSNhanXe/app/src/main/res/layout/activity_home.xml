@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <EditText
+        android:id="@+id/txtcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Nhập biển số xe/số điện thoại khách hàng."
+        android:inputType="text"
+        android:textColor="@color/colorAccent"  />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Tìm theo :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"  />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+        <RadioButton
+            android:id="@+id/raBienSo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:text="Biển số xe"
+            android:checked="true"
+            android:textColor="#E91E63" />
+
+        <RadioButton
+            android:id="@+id/raDienThoai"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Số điện thoại"
+            android:textColor="#E91E63" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btfind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:text="Tìm khách hàng"
+            android:textColor="#E91E63"
+            app:backgroundTint="?attr/colorControlHighlight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btscan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="?android:attr/actionModeFindDrawable"
+            android:text="Scan mã QR khách hàng "
+            android:textColor="#E91E63"
+            app:backgroundTint="?attr/colorControlHighlight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btprintQMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_set_as"
+            android:text="In STT trực tiếp từ QMS"
+            android:textColor="#E91E63"
+            app:backgroundTint="?attr/colorControlHighlight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+
+            android:id="@+id/btconfig"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_manage"
+            android:text="Cấu hình"
+            android:textColor="#E91E63"
+            app:backgroundTint="?attr/colorControlHighlight" />
+
+        <Button
+            android:id="@+id/btexit"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_lock_power_off"
+            android:text="Thoát ứng dụng"
+            android:textColor="#000"
+            app:backgroundTint="?attr/colorControlHighlight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#94D8F6"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textStyle="bold"
+            android:text="Kết quả tìm kiếm"
+            android:textColor="#3F51B5" />
+        <ListView
+            android:id="@+id/lvKH"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

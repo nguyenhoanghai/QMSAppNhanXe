@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrintActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dịch vụ"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/cbdichvu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/lb14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Biển số xe"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"  />
+                <EditText
+                    android:id="@+id/txtbso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/lb15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số Km hiện tại"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"  />
+                <EditText
+                    android:id="@+id/txtkm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="@color/colorAccent"  />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/lb16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số máy"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"  />
+                <EditText
+                    android:id="@+id/txtsomay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textColor="@color/colorAccent"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/lb17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số khung"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"  />
+                <EditText
+                    android:id="@+id/txtsokhung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorAccent"  />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lb18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"  />
+        <EditText
+            android:id="@+id/txtnote"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="text|textMultiLine"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/zxing_custom_viewfinder_mask"
+                android:drawableLeft="@android:drawable/ic_menu_revert"
+                android:padding="5dp"
+                android:text="Quay lại"
+                android:textStyle="bold"
+                android:textColor="#000"
+                app:backgroundTint="?attr/colorControlHighlight"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btsave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:background="#dd0202"
+                android:drawableLeft="@android:drawable/ic_input_add"
+                android:padding="5dp"
+                android:text="Tạo phiếu dịch vụ"
+                android:textColor="#E91E63"
+                android:textStyle="bold"
+                app:backgroundTint="?attr/colorControlHighlight"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
